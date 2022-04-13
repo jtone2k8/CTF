@@ -43,3 +43,19 @@ ZmxhZ3tUaGlzSXNTdXBlclVSR250R3V5c30K
 This gives us our flag:
 
 ![](<../.gitbook/assets/image (20).png>)
+
+PowerShell Solution:
+
+```
+[system.text.encoding]::ascii.getstring([system.convert]::frombase64string(-join ((.\tshark.exe -x -r 'Suspiciouser.pcapng' -Y "ip.src==192.168.17.7" |Select-String 0030 |%{($_ -split " ")[6..7]}) -split '(..)'|%{$_ -replace "00",""}|?{$_}|%{[char][convert]::touint32($_,16)})))
+```
+
+Unpacking this mess of a command:
+
+1. tshark dumps the hex version of the query on the read in pcap with the -x
+2. select-string 0030 pulls only the line with the urgent pointer located in it
+   * <img src="../.gitbook/assets/image (13).png" alt="" data-size="original">
+3. Split on spaces to grab the fields with the hex of the data we want to pull and also drop all the empty 00 hex codes
+   * 5a6d78685a33745561476c7a53584e546458426c636c565352323530523356356333304b
+4. Finally we can then take that output and convert from hex; which leaves us with a base64 encoded item that we can then decode to get the final flag.
+

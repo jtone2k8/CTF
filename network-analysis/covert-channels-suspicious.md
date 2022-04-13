@@ -31,7 +31,7 @@ Put that in to a hex decode/CyberChef and we have decoded our flag.
 ```
 $data = .\tshark.exe -r 'suspicious.pcapng' -Y "ip.src==192.168.17.7" -Tfields -e data | %{$_[1]}
 
--join ([string]::join("",$data) -split '(..)'|? {$}|%{[char][convert]::touint32($,16)})
+-join ([string]::join("",$data) -split '(..)'|? {$_}|%{[char][convert]::touint32($_,16)})
 ```
 
 #### What is this doing?
