@@ -30,11 +30,11 @@ We see that there was a file downloaded named zip.zip, but when you go to find t
 
 ![](<../.gitbook/assets/image (12).png>)
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (1).png>)
 
 The answer is to switch the filter from ftp to ftp-data. We now see the data that was transferred.
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 Follow the TCP stream to see all the data:
 

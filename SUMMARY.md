@@ -6,5 +6,6 @@
   * [Covert Channels - Suspicious](network-analysis/covert-channels-suspicious.md)
   * [Covert Channels - Transfer](network-analysis/covert-channels-transfer.md)
   * [Covert Channels - Suspiciouser](network-analysis/covert-channels-suspiciouser.md)
-* [Memory Analysis](memory-analysis/README.md)
-  * [forensics-the\_heist](memory-analysis/forensics-the\_heist.md)
+* [Memory Analysis](memory-analysis.md)
+* [Steganography](steganography/README.md)
+  * [Stego Troll](steganography/stego-troll.md)

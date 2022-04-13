@@ -8,7 +8,7 @@ We found some suspicious traffic on our network and think there could be some ma
 
 To start off with on this Pcap we look at the Protocol Hierarchy page:
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 We can see that this is all TCP packets with a Data Field on some of the packets.
 
@@ -16,7 +16,7 @@ To start off let us dig into that data field and see what is going on here. We s
 
 Let’s take this info to cyber chef and try to decode it. It looks like it was all in hex so here is the results of converting from Hex:
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (19) (1).png>)
 
 Next we see that it looks like it could be in base64, so let’s decode that also:
 
@@ -42,7 +42,7 @@ ZmxhZ3tUaGlzSXNTdXBlclVSR250R3V5c30K
 
 This gives us our flag:
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (1).png>)
 
 PowerShell Solution:
 
