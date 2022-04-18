@@ -29,22 +29,16 @@ Put that in to a hex decode/CyberChef and we have decoded our flag.
 ### **Powershell Solution:**
 
 ```
-$data = .\tshark.exe -r 'suspicious.pcapng' -Y "ip.src==192.168.17.7" -Tfields -e data | %{$_[1]}
-
--join ([string]::join("",$data) -split '(..)'|? {$_}|%{[char][convert]::touint32($_,16)})
+-join ([string]::join("",(.\tshark.exe -r 'suspicious.pcapng' -Y "ip.src==192.168.17.7" -Tfields -e data | %{$_[1]})) -split '(..)'|? {$_}|%{[char][convert]::touint32($_,16)})
 ```
 
 #### What is this doing?
-
-**1st command:**
 
 tshark is reading in the pcap with a search filter of one of the two IP addresses.
 
 It is then extracting out the single ping data field from the results
 
 Then it is dropping the leading 0 from the results so that we can combine them to get the true hex result
-
-#### **2nd Command:**
 
 joining the the data together into a single line
 

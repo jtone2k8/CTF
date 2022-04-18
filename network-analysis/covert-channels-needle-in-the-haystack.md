@@ -23,3 +23,21 @@ Next thing to look at would be Telnet as this is easy to view because there is n
 ![](<../.gitbook/assets/image (17).png>)
 
 Here we get the answer in  plain text across the packets.
+
+#### PowerShell Solution:
+
+```
+-join (.\tshark.exe -r 'needleinahaystack.pcapng' -Y "telnet" -T fields -e telnet.data | ?{$_ -cne " "})
+```
+
+join at the beginning will combine all the items into a single line which will make it easier to read (after the follow is ran)
+
+Tshark –r will read in the pcap
+
+\-Y is the filter of telnet
+
+\-T fields is to format the output as text based of fields of the packet
+
+\-e is the field name to extract; here it is the telnet.data
+
+All piped to remove any blank lines
