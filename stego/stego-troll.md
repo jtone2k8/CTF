@@ -10,11 +10,11 @@ Start off by copying the challenge to a text document.
 
 We will notice that the formatting is off when we paste it into notepad.
 
-![](<../.gitbook/assets/image (22).png>)
+![](<../.gitbook/assets/image (22) (1).png>)
 
 Also we wil notice that for such a short sentence the file takes up quite a bit of room on disk.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (1).png>)
 
 Next if we output the file to hex we can see some interesting things.
 
@@ -24,7 +24,7 @@ Get-content and format-hex to look at the data
 
 We can also drop this into CyberChef to also see the unique output
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (1).png>)
 
 Non-Printable characters:
 
@@ -42,11 +42,11 @@ Going back to CyberChef to see how we can find anything, we see that there are b
 
 How many Non Printable Character (NPC) \[Not Non Player Characters] are there between printable characters?
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6) (1).png>)
 
 We get a length of 102, what does that mean? How does that help us?
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (1).png>)
 
 The 102 length translates into f which is the first letter of our flag!
 
