@@ -88,7 +88,7 @@ Output:
 
 The great thing about YARA is that it tells you the files that an item is located at!
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (12) (1).png>)
 
 #### Question 2
 
@@ -175,7 +175,7 @@ Santa outsourced this list making ability to head elf, Peppermint Candy, but her
 
 This time around the files seem to have lots of extra characters we will have to hunt through.
 
-![](<../.gitbook/assets/image (14).png>)
+![](<../.gitbook/assets/image (14) (1).png>)
 
 Do you see a pattern?
 
@@ -219,17 +219,17 @@ rule shopkins
 
 .\yara64.exe -r .\q4.yar .\elves\_level2\\
 
-![](<../.gitbook/assets/image (16).png>)
+![](<../.gitbook/assets/image (16) (1).png>)
 
 .\yara64.exe -rs .\q4.yar .\elves\_level2\\
 
-![](<../.gitbook/assets/image (13).png>)
+![](<../.gitbook/assets/image (13) (1).png>)
 
 .\yara64.exe -rs .\q4.yar .\elves\_level2\ | %{$\_ -replace "\\\x00",""}
 
-![](<../.gitbook/assets/image (15).png>)
+![](<../.gitbook/assets/image (15) (1).png>)
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (1).png>)
 
 #### Question 5
 
@@ -255,7 +255,7 @@ rule creative
 
 ![](<../.gitbook/assets/image (5).png>)
 
-![](<../.gitbook/assets/image (21).png>)
+![](<../.gitbook/assets/image (21) (1).png>)
 
 ![](<../.gitbook/assets/image (2).png>)
 
@@ -263,7 +263,7 @@ rule creative
 
 In case you missed it, we had one of the elves have 2 Creative toys:
 
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (17) (1).png>)
 
 ![](<../.gitbook/assets/image (4).png>)
 

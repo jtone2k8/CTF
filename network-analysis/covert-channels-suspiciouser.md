@@ -16,7 +16,7 @@ To start off let us dig into that data field and see what is going on here. We s
 
 Let’s take this info to cyber chef and try to decode it. It looks like it was all in hex so here is the results of converting from Hex:
 
-![](<../.gitbook/assets/image (19) (1).png>)
+![](<../.gitbook/assets/image (19) (1) (1).png>)
 
 Next we see that it looks like it could be in base64, so let’s decode that also:
 
@@ -42,7 +42,7 @@ ZmxhZ3tUaGlzSXNTdXBlclVSR250R3V5c30K
 
 This gives us our flag:
 
-![](<../.gitbook/assets/image (20) (1) (1).png>)
+![](<../.gitbook/assets/image (20) (1) (1) (1).png>)
 
 PowerShell Solution:
 
@@ -54,7 +54,7 @@ Unpacking this mess of a command:
 
 1. tshark dumps the hex version of the query on the read in pcap with the -x
 2. select-string 0030 pulls only the line with the urgent pointer located in it
-   * <img src="../.gitbook/assets/image (13) (1).png" alt="" data-size="original">
+   * <img src="../.gitbook/assets/image (13) (1) (1).png" alt="" data-size="original">
 3. Split on spaces to grab the fields with the hex of the data we want to pull and also drop all the empty 00 hex codes
    * 5a6d78685a33745561476c7a53584e546458426c636c565352323530523356356333304b
 4. Finally we can then take that output and convert from hex; which leaves us with a base64 encoded item that we can then decode to get the final flag.
