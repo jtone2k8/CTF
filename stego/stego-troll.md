@@ -73,7 +73,7 @@ $stego | ForEach-Object {
 }
 ```
 
-![](<../.gitbook/assets/image (19) (1).png>)
+![](<../.gitbook/assets/image (19) (1) (1).png>)
 
 As you can see we can split on hex:e2 or decimal:226
 

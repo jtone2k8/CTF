@@ -85,13 +85,13 @@ I am creating my final out variable with $out
 
 For the next section we will loop through the $text variable until we reach the end. As we go through each character we want to convert from ASCII to Decimal to make the conversions easier. We will also use our ascii table to help us out. http://www.asciitable.com/
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (19) (1).png>)
 
 <img src="../.gitbook/assets/image (21).png" alt="" data-size="original">
 
 Now that we have our charters in decimal we can now begin to Rotate our letters. In my script I rotate up (but rotating down -1 will also work)
 
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (17) (1).png>)
 
 The main thing here is the % 26 that reset back to 0 if the number goes over the 26 char limit so this will keep us in the ASCII range of 97-122 and we do $t (dec) – the limit to do a -1 rot
 

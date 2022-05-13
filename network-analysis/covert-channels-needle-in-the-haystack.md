@@ -6,7 +6,7 @@
 
 Start off with looking at the protocol hierarchy
 
-![](<../.gitbook/assets/image (18) (1).png>)
+![](<../.gitbook/assets/image (18) (1) (1).png>)
 
 We can see that we have the following Protocols to look into:
 
@@ -20,7 +20,7 @@ We might want to look at the Malformed Packet as we are looking for a needle in 
 
 Next thing to look at would be Telnet as this is easy to view because there is no encryption. We examine the Data field under Telnet to see what is being sent and we see all the characters being typed across the wire
 
-![](<../.gitbook/assets/image (17) (1) (1).png>)
+![](<../.gitbook/assets/image (17) (1) (1) (1).png>)
 
 Here we get the answer in  plain text across the packets.
 

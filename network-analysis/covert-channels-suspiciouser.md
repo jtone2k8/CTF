@@ -16,7 +16,7 @@ To start off let us dig into that data field and see what is going on here. We s
 
 Let’s take this info to cyber chef and try to decode it. It looks like it was all in hex so here is the results of converting from Hex:
 
-![](<../.gitbook/assets/image (19) (1) (1).png>)
+![](<../.gitbook/assets/image (19) (1) (1) (1).png>)
 
 Next we see that it looks like it could be in base64, so let’s decode that also:
 

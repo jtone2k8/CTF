@@ -118,7 +118,7 @@ Calling the rule to scan the items:
 .\yara64.exe -r .\q2.yar .\
 ```
 
-![](<../.gitbook/assets/image (18).png>)
+![](<../.gitbook/assets/image (18) (1).png>)
 
 To count the occurrences | measure can answer that:
 
@@ -263,7 +263,7 @@ rule creative
 
 In case you missed it, we had one of the elves have 2 Creative toys:
 
-![](<../.gitbook/assets/image (17) (1).png>)
+![](<../.gitbook/assets/image (17) (1) (1).png>)
 
 ![](<../.gitbook/assets/image (4).png>)
 

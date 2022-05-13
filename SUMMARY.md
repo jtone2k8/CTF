@@ -17,3 +17,7 @@
 
 * [Stego Troll](stego/stego-troll.md)
 * [ROT of a Different Sort](stego/rot-of-a-different-sort.md)
+
+## PowerShell
+
+* [Invoked!](powershell/invoked.md)
