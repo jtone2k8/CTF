@@ -84,11 +84,11 @@ Calling this file to run:
 
 Output:
 
-![](<../.gitbook/assets/image (24).png>)
+![](<../.gitbook/assets/image (24) (1).png>)
 
 The great thing about YARA is that it tells you the files that an item is located at!
 
-![](<../.gitbook/assets/image (12) (1).png>)
+![](<../.gitbook/assets/image (12) (1) (1).png>)
 
 #### Question 2
 
@@ -118,7 +118,7 @@ Calling the rule to scan the items:
 .\yara64.exe -r .\q2.yar .\
 ```
 
-![](<../.gitbook/assets/image (18) (1).png>)
+![](<../.gitbook/assets/image (18) (1) (1).png>)
 
 To count the occurrences | measure can answer that:
 
@@ -126,7 +126,7 @@ To count the occurrences | measure can answer that:
 
 ![](<../.gitbook/assets/image (3).png>)
 
-![](<../.gitbook/assets/image (22).png>)
+![](<../.gitbook/assets/image (22) (1).png>)
 
 #### Question 3
 
@@ -151,19 +151,19 @@ rule train
 
 This will look for the string toy and train and the condition that must be met is the matching of both strings to be considered true.
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (1).png>)
 
 You and add the -s option to show the strings that were matched:
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (1).png>)
 
 Here we see all the \x00 in between all the characters, you could replace them in the pipeline if you wanted to hide them.
 
 .\yara64.exe -rs .\q3.yar .\\|%{$\_ -replace "\\\x00",""}
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6) (1).png>)
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (1).png>)
 
 We can see that toy gets matched twice in this file but train only one time but since both are matched then we have a true condition.
 
@@ -223,13 +223,13 @@ rule shopkins
 
 .\yara64.exe -rs .\q4.yar .\elves\_level2\\
 
-![](<../.gitbook/assets/image (13) (1).png>)
+![](<../.gitbook/assets/image (13) (1) (1).png>)
 
 .\yara64.exe -rs .\q4.yar .\elves\_level2\ | %{$\_ -replace "\\\x00",""}
 
 ![](<../.gitbook/assets/image (15) (1).png>)
 
-![](<../.gitbook/assets/image (20) (1).png>)
+![](<../.gitbook/assets/image (20) (1) (1).png>)
 
 #### Question 5
 
@@ -255,17 +255,17 @@ rule creative
 
 ![](<../.gitbook/assets/image (5).png>)
 
-![](<../.gitbook/assets/image (21) (1).png>)
+![](<../.gitbook/assets/image (21) (1) (1).png>)
 
 ![](<../.gitbook/assets/image (2).png>)
 
-![](<../.gitbook/assets/image (23).png>)
+![](<../.gitbook/assets/image (23) (1).png>)
 
 In case you missed it, we had one of the elves have 2 Creative toys:
 
 ![](<../.gitbook/assets/image (17) (1) (1).png>)
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 The measure did not take into effect the double match so we had to add 1 to our answer.
 
@@ -285,8 +285,8 @@ rule fidget
 }
 ```
 
-![](<../.gitbook/assets/image (25).png>)
+![](<../.gitbook/assets/image (25) (1).png>)
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8) (1).png>)
 
 **Stay Tuned For Levels 3/4**

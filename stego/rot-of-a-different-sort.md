@@ -20,7 +20,7 @@ CyberChef is always a good place to start with encoded items. Let’s Mess with 
 
 ![Rot 13](<../.gitbook/assets/image (16).png>)
 
-![Rot 47](<../.gitbook/assets/image (12).png>)
+![Rot 47](<../.gitbook/assets/image (12) (1).png>)
 
 ![Rot 13 With Numbers](<../.gitbook/assets/image (15).png>)
 
@@ -75,7 +75,7 @@ What about the next word – do either of these work out?
 
 Pick you favorite scripting language and have a go at it. For this I am going to do PowerShell to solve this problem
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (1).png>)
 
 To start off I am going to create a variable with the encoded text - $encode
 
@@ -85,9 +85,9 @@ I am creating my final out variable with $out
 
 For the next section we will loop through the $text variable until we reach the end. As we go through each character we want to convert from ASCII to Decimal to make the conversions easier. We will also use our ascii table to help us out. http://www.asciitable.com/
 
-![](<../.gitbook/assets/image (19) (1).png>)
+![](<../.gitbook/assets/image (19) (1) (1).png>)
 
-<img src="../.gitbook/assets/image (21).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (21) (1).png" alt="" data-size="original">
 
 Now that we have our charters in decimal we can now begin to Rotate our letters. In my script I rotate up (but rotating down -1 will also work)
 
@@ -97,7 +97,7 @@ The main thing here is the % 26 that reset back to 0 if the number goes over the
 
 Then if the rot is under 97 we just add 26 to get it back in range.
 
-![Full Script](<../.gitbook/assets/image (13).png>)
+![Full Script](<../.gitbook/assets/image (13) (1).png>)
 
 We run the script and the answer is in the output!
 
