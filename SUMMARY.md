@@ -5,7 +5,11 @@
 ## Tool
 
 * [Yara](tool/yara.md)
-* [Kape](tool/kape.md)
+* [EZ Tools](tool/ez-tools/README.md)
+  * [Registery Explorer](tool/ez-tools/registery-explorer.md)
+  * [Prefetch Parser](tool/ez-tools/prefetch-parser.md)
+  * [Evtx Explorer](tool/ez-tools/evtx-explorer.md)
+  * [MFT Explorer](tool/ez-tools/mft-explorer.md)
 
 ## Network Analysis
 
