@@ -20,7 +20,7 @@ Next if we output the file to hex we can see some interesting things.
 
 Get-content and format-hex to look at the data
 
-![](<../.gitbook/assets/image (9) (1).png>)
+![](<../.gitbook/assets/image (9) (1) (1).png>)
 
 We can also drop this into CyberChef to also see the unique output
 
@@ -36,17 +36,17 @@ Unicode of U+200C
 
 List of all 8 Non Printable Characters
 
-![](<../.gitbook/assets/image (10) (1).png>)
+![](<../.gitbook/assets/image (10) (1) (1).png>)
 
 Going back to CyberChef to see how we can find anything, we see that there are breaks in all the characters by printable characters.
 
 How many Non Printable Character (NPC) \[Not Non Player Characters] are there between printable characters?
 
-![](<../.gitbook/assets/image (6) (1) (1).png>)
+![](<../.gitbook/assets/image (6) (1) (1) (1).png>)
 
 We get a length of 102, what does that mean? How does that help us?
 
-![](<../.gitbook/assets/image (20) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (20) (1) (1) (1) (1).png>)
 
 The 102 length translates into f which is the first letter of our flag!
 
@@ -73,7 +73,7 @@ $stego | ForEach-Object {
 }
 ```
 
-![](<../.gitbook/assets/image (19) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (19) (1) (1) (1) (1).png>)
 
 As you can see we can split on hex:e2 or decimal:226
 

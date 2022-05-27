@@ -75,7 +75,7 @@ What about the next word – do either of these work out?
 
 Pick you favorite scripting language and have a go at it. For this I am going to do PowerShell to solve this problem
 
-![](<../.gitbook/assets/image (20) (1).png>)
+![](<../.gitbook/assets/image (20) (1) (1).png>)
 
 To start off I am going to create a variable with the encoded text - $encode
 
@@ -85,7 +85,7 @@ I am creating my final out variable with $out
 
 For the next section we will loop through the $text variable until we reach the end. As we go through each character we want to convert from ASCII to Decimal to make the conversions easier. We will also use our ascii table to help us out. http://www.asciitable.com/
 
-![](<../.gitbook/assets/image (19) (1) (1).png>)
+![](<../.gitbook/assets/image (19) (1) (1) (1).png>)
 
 <img src="../.gitbook/assets/image (21) (1).png" alt="" data-size="original">
 

@@ -28,7 +28,7 @@ Let’s start off by jumping into the Event logs in the following location: E:\M
 
 Open up the System logs to get the first flag.
 
-![](<../../.gitbook/assets/image (18).png>)
+![](<../../.gitbook/assets/image (18) (1).png>)
 
 ![](<../../.gitbook/assets/image (31).png>)
 
@@ -56,7 +56,7 @@ We will load the ntuser.dat file which is the HKUser hive for Silver Smurfer.   
 
 The registry key we are looking for is under ROOT\Software\Microsoft\Internet Explorer\TypedURLs
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4) (1).png>)
 
 We see that since they used Internet Explorer, we have their history and the answer to this question.
 
@@ -70,7 +70,7 @@ From the folder of EvtxEcmd.exe run the following command: .\EvtxECmd.exe -d E:\
 
 This will read all the log files from the drive and output to c:\temp\zimmerman\\\<date>\_EvtxECmd\_Output.csv
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../../.gitbook/assets/image (8) (1).png>)
 
 From here click on a cell and do Control + A to select all and go to insert Table with headers. This will make filter take no time at all.
 
@@ -80,7 +80,7 @@ Next Filter EventID -> deselect all and select 4688 or New Process Creation
 
 Next we will go to Column V: ExecutableInfo Click on V to highlight the whole column -> Insert -> Pivot Table -> Dump the column into a new sheet. This will give us a unique list of all processes started.
 
-![](<../../.gitbook/assets/image (9).png>)
+![](<../../.gitbook/assets/image (9) (1).png>)
 
 We look at Silver Smurfer we can see that there is an odd looking lssas.exe file launched from there.
 
@@ -104,7 +104,7 @@ find.exe and tasklist.exe
 
 For this we will do the same as question 6, only we will look for the next instance of cmd.exe in the executable info (not the parent process).
 
-![](<../../.gitbook/assets/image (23).png>)
+![](<../../.gitbook/assets/image (23) (1).png>)
 
 C:\Windows\System32\svchost.exe
 
@@ -114,11 +114,11 @@ For this question we will go back to the M drive and go to the Tasks Folder: E:\
 
 Here we see a task called SystemCheck that we need to look at.
 
-![](<../../.gitbook/assets/image (30).png>)
+![](<../../.gitbook/assets/image (30) (1).png>)
 
 Open this up in Notepad:
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../../.gitbook/assets/image (6) (1).png>)
 
 We see that this is calling a bat file. There is a repetition check enabled so this is persistence.
 
@@ -128,7 +128,7 @@ For this question we will be using Zimmerman’s MFTExplorer program to look at 
 
 Load the $MFT table on the M drive.
 
-![](<../../.gitbook/assets/image (19).png>)
+![](<../../.gitbook/assets/image (19) (1).png>)
 
 Since we know that Silver Smurfer is the user we want to focus on from all the previous questions, and we have a bat file coming from their appdata folder, let’s start our search there.
 
@@ -150,7 +150,7 @@ C:\users\Silver Smurfer\AppData\sneaky
 
 We look on the bottom right corner to of the MFTExplorer to find this info.
 
-![](<../../.gitbook/assets/image (20).png>)
+![](<../../.gitbook/assets/image (20) (1).png>)
 
 ### Question 12: What is the full path to the system utility someone used to examine FireFoxAnalyzer.exe?
 

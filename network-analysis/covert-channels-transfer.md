@@ -24,7 +24,7 @@ For this pcap we see FTP in plain text, so we can start off looking at that prot
 
 
 
-![](<../.gitbook/assets/image (8) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (8) (1) (1) (1) (1).png>)
 
 We see that there was a file downloaded named zip.zip, but when you go to find the data it seems to be missing. We cannot export the FTP data files and the TCP stream does not give us the data of the transfer either.
 
@@ -34,7 +34,7 @@ We see that there was a file downloaded named zip.zip, but when you go to find t
 
 The answer is to switch the filter from ftp to ftp-data. We now see the data that was transferred.
 
-![](<../.gitbook/assets/image (10) (1) (1).png>)
+![](<../.gitbook/assets/image (10) (1) (1) (1).png>)
 
 Follow the TCP stream to see all the data:
 

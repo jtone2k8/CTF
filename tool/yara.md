@@ -118,7 +118,7 @@ Calling the rule to scan the items:
 .\yara64.exe -r .\q2.yar .\
 ```
 
-![](<../.gitbook/assets/image (18) (1) (1).png>)
+![](<../.gitbook/assets/image (18) (1) (1) (1).png>)
 
 To count the occurrences | measure can answer that:
 
@@ -161,7 +161,7 @@ Here we see all the \x00 in between all the characters, you could replace them i
 
 .\yara64.exe -rs .\q3.yar .\\|%{$\_ -replace "\\\x00",""}
 
-![](<../.gitbook/assets/image (6) (1).png>)
+![](<../.gitbook/assets/image (6) (1) (1).png>)
 
 ![](<../.gitbook/assets/image (11) (1).png>)
 
@@ -229,7 +229,7 @@ rule shopkins
 
 ![](<../.gitbook/assets/image (15) (1).png>)
 
-![](<../.gitbook/assets/image (20) (1) (1).png>)
+![](<../.gitbook/assets/image (20) (1) (1) (1).png>)
 
 #### Question 5
 
@@ -253,19 +253,19 @@ rule creative
 
 &#x20;
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
 
 ![](<../.gitbook/assets/image (21) (1) (1).png>)
 
 ![](<../.gitbook/assets/image (2).png>)
 
-![](<../.gitbook/assets/image (23) (1).png>)
+![](<../.gitbook/assets/image (23) (1) (1).png>)
 
 In case you missed it, we had one of the elves have 2 Creative toys:
 
 ![](<../.gitbook/assets/image (17) (1) (1).png>)
 
-![](<../.gitbook/assets/image (4) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1).png>)
 
 The measure did not take into effect the double match so we had to add 1 to our answer.
 
@@ -287,6 +287,6 @@ rule fidget
 
 ![](<../.gitbook/assets/image (25) (1).png>)
 
-![](<../.gitbook/assets/image (8) (1).png>)
+![](<../.gitbook/assets/image (8) (1) (1).png>)
 
 **Stay Tuned For Levels 3/4**

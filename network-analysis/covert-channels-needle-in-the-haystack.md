@@ -6,7 +6,7 @@
 
 Start off with looking at the protocol hierarchy
 
-![](<../.gitbook/assets/image (18) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (18) (1) (1) (1) (1).png>)
 
 We can see that we have the following Protocols to look into:
 

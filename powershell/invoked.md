@@ -140,7 +140,7 @@ There are several ways to do this…
 
 2\. You can run the echo commands one at a time
 
-![](<../.gitbook/assets/image (18) (1).png>)
+![](<../.gitbook/assets/image (18) (1) (1).png>)
 
 3\. Or create a script that will pull it all together and convert from base64 (I like this one!)
 
@@ -160,4 +160,4 @@ $answer+= ('{22}{6}{21}' -f $f)     #nN9
 
 ```
 
-![](<../.gitbook/assets/image (19) (1).png>)
+![](<../.gitbook/assets/image (19) (1) (1).png>)

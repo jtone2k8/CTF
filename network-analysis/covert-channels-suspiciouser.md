@@ -16,11 +16,11 @@ To start off let us dig into that data field and see what is going on here. We s
 
 Let’s take this info to cyber chef and try to decode it. It looks like it was all in hex so here is the results of converting from Hex:
 
-![](<../.gitbook/assets/image (19) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (19) (1) (1) (1) (1) (1).png>)
 
 Next we see that it looks like it could be in base64, so let’s decode that also:
 
-![](<../.gitbook/assets/image (4) (1) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1) (1).png>)
 
 So, we know that this is not the answer, we need to look into the packets a little bit more to see what else we can find that is not right. In the packet information we see that the Urgent Pointer filed is highlighted:
 
@@ -34,7 +34,7 @@ We have ZmxhZ3tU
 
 This looks like a base64 pattern so let’s look at cyberchef and see if that decodes to anything that might resemble a flag.
 
-![](<../.gitbook/assets/image (5) (1).png>)
+![](<../.gitbook/assets/image (5) (1) (1).png>)
 
 We have the start of our flag let’s pull the rest of the urgent pointers out to get the flag.
 
@@ -42,7 +42,7 @@ ZmxhZ3tUaGlzSXNTdXBlclVSR250R3V5c30K
 
 This gives us our flag:
 
-![](<../.gitbook/assets/image (20) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (20) (1) (1) (1) (1) (1).png>)
 
 PowerShell Solution:
 
