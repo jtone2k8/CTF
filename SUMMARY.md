@@ -30,3 +30,4 @@
 ## Memory Forensics
 
 * [0 Day](memory-forensics/0-day.md)
+* [Cain's Memory Loss](memory-forensics/cains-memory-loss.md)
