@@ -6,7 +6,7 @@
 
 #### vol.py -f 0day.bin kdbgscan or imageinfo
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (19) (1).png>)
 
 Answer is Win2012R2x64
 
@@ -34,17 +34,17 @@ In volatility in order to find the location of the Windows Registry we need to f
 
 We needed a more specific profile for the hivelist module to populate the list
 
-![](<../.gitbook/assets/image (18).png>)
+![](<../.gitbook/assets/image (18) (1).png>)
 
 Now we will use the virtual offset of registry\machine\system to get to the list we need: 0xffffc001cb428000
 
 #### vol.py -f 0day.bin --profile=Win2012R2x64\_18340 printkey -o 0xffffc001cb428000
 
-![](<../.gitbook/assets/image (23).png>)
+![](<../.gitbook/assets/image (23) (1).png>)
 
 #### vol.py -f 0day.bin --profile=Win2012R2x64\_18340 printkey -o 0xffffc001cb428000 -K CurrentControlset
 
-![](<../.gitbook/assets/image (30).png>)
+![](<../.gitbook/assets/image (30) (1).png>)
 
 Since Current Control Set does not have anything inside other than a pointer, we will try to controlset001 location.
 
@@ -90,7 +90,7 @@ We will choose the getsids plugin to get this info:&#x20;
 
 The S-1-5-21 -\*-512 is the Sid used by domain admins where \* is the specific domain
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 Answer: S-1-5-21-4092088994-1057394591-2624646455-512
 
@@ -120,7 +120,7 @@ For this challenge we are looking for a way to send/receive data, we will look a
 
 #### vol.py -f 0day.bin --profile=Win2012R2x64\_18340 pstree
 
-![](<../.gitbook/assets/image (32).png>)
+![](<../.gitbook/assets/image (32) (1).png>)
 
 We might first look at the 1884 PID for program, but none of those are the answer, but if we move up to the parent process of 1884, we are at Pid 492. Inside of Pid 492 we have an RDP session and in order to move files between the client and server rdpclip.exe is spawned. Pid 2784 gives the ability to copy to/from the server in the RDP client.
 

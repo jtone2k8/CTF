@@ -10,11 +10,11 @@ Start off by copying the challenge to a text document.
 
 We will notice that the formatting is off when we paste it into notepad.
 
-![](<../.gitbook/assets/image (22) (1) (1).png>)
+![](<../.gitbook/assets/image (22) (1) (1) (1).png>)
 
 Also we wil notice that for such a short sentence the file takes up quite a bit of room on disk.
 
-![](<../.gitbook/assets/image (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1) (1).png>)
 
 Next if we output the file to hex we can see some interesting things.
 
@@ -24,7 +24,7 @@ Get-content and format-hex to look at the data
 
 We can also drop this into CyberChef to also see the unique output
 
-![](<../.gitbook/assets/image (11) (1) (1).png>)
+![](<../.gitbook/assets/image (11) (1) (1) (1).png>)
 
 Non-Printable characters:
 
@@ -36,7 +36,7 @@ Unicode of U+200C
 
 List of all 8 Non Printable Characters
 
-![](<../.gitbook/assets/image (10) (1) (1).png>)
+![](<../.gitbook/assets/image (10) (1) (1) (1).png>)
 
 Going back to CyberChef to see how we can find anything, we see that there are breaks in all the characters by printable characters.
 
@@ -73,7 +73,7 @@ $stego | ForEach-Object {
 }
 ```
 
-![](<../.gitbook/assets/image (19) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (19) (1) (1) (1) (1) (1).png>)
 
 As you can see we can split on hex:e2 or decimal:226
 

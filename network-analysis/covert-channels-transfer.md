@@ -30,11 +30,11 @@ We see that there was a file downloaded named zip.zip, but when you go to find t
 
 ![](<../.gitbook/assets/image (12) (1) (1) (1).png>)
 
-![](<../.gitbook/assets/image (1) (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1) (1) (1).png>)
 
 The answer is to switch the filter from ftp to ftp-data. We now see the data that was transferred.
 
-![](<../.gitbook/assets/image (10) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (10) (1) (1) (1) (1).png>)
 
 Follow the TCP stream to see all the data:
 
@@ -42,4 +42,4 @@ Follow the TCP stream to see all the data:
 
 Click on the Save as button to save the zip.zip file. We can see that the PK… is a Zip file and inside the zip file is a flag.png file.
 
-![](<../.gitbook/assets/image (13) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png>)

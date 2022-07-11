@@ -116,7 +116,7 @@ But essentially to find the flag we need to run the last part of each line in or
 
 For example, we run for the last line we have #2, if we run the code after that separately, we get the following:
 
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (17) (1).png>)
 
 or Zml2 which if you don’t recognize this it is base64 for fiv
 
@@ -140,7 +140,7 @@ There are several ways to do this…
 
 2\. You can run the echo commands one at a time
 
-![](<../.gitbook/assets/image (18) (1) (1).png>)
+![](<../.gitbook/assets/image (18) (1) (1) (1).png>)
 
 3\. Or create a script that will pull it all together and convert from base64 (I like this one!)
 
@@ -160,4 +160,4 @@ $answer+= ('{22}{6}{21}' -f $f)     #nN9
 
 ```
 
-![](<../.gitbook/assets/image (19) (1) (1).png>)
+![](<../.gitbook/assets/image (19) (1) (1) (1).png>)

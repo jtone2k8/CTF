@@ -12,11 +12,11 @@ Given a Kape forensics capture can you solve these questions?
 
 After getting the file the first thing, we need to do in to extract it with 7zip or WinRAR.
 
-![](<../../.gitbook/assets/image (24).png>)
+![](<../../.gitbook/assets/image (24) (1).png>)
 
 Once the File is extracted on a windows system we can right click and mount the drive to browse the contents.
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (11) (1).png>)
 
 ![](<../../.gitbook/assets/image (21).png>)
 
@@ -28,9 +28,9 @@ Let’s start off by jumping into the Event logs in the following location: E:\M
 
 Open up the System logs to get the first flag.
 
-![](<../../.gitbook/assets/image (18) (1).png>)
+![](<../../.gitbook/assets/image (18) (1) (1).png>)
 
-![](<../../.gitbook/assets/image (31).png>)
+![](<../../.gitbook/assets/image (31) (1).png>)
 
 ### Question 2: What is the name of the third account?
 
@@ -38,7 +38,7 @@ There are three local administrators on this system: Administrator, Assessor and
 
 For this one go back to File Explorer and go to the following location: E:\M\users
 
-![](<../../.gitbook/assets/image (27).png>)
+![](<../../.gitbook/assets/image (27) (1).png>)
 
 ### Question 3: Silver Smurfer Accessed a suspicious website, what was the URL?
 
@@ -50,7 +50,7 @@ For this one in particular we are going to run the RegistryExplorer
 
 ![](<../../.gitbook/assets/image (7).png>)
 
-![](<../../.gitbook/assets/image (22).png>)
+![](<../../.gitbook/assets/image (22) (1).png>)
 
 We will load the ntuser.dat file which is the HKUser hive for Silver Smurfer.                                                                                                                                      &#x20;
 
@@ -90,13 +90,13 @@ For this one we will go back to the main sheet in our event log dump.
 
 We will filter out the Column V for lssas.exe executable that we found and the answer jumps out.
 
-![](<../../.gitbook/assets/image (29).png>)
+![](<../../.gitbook/assets/image (29) (1).png>)
 
 ### Question 6: What two processes were launched by cmd.exe immediately before lssas.exe?
 
 For this remove the filter for lssas.exe from question 5. Do a search for lssas and look at the events surrounding the search.
 
-![](<../../.gitbook/assets/image (25).png>)
+![](<../../.gitbook/assets/image (25) (1).png>)
 
 find.exe and tasklist.exe
 
@@ -104,7 +104,7 @@ find.exe and tasklist.exe
 
 For this we will do the same as question 6, only we will look for the next instance of cmd.exe in the executable info (not the parent process).
 
-![](<../../.gitbook/assets/image (23) (1).png>)
+![](<../../.gitbook/assets/image (23) (1) (1).png>)
 
 C:\Windows\System32\svchost.exe
 
@@ -114,7 +114,7 @@ For this question we will go back to the M drive and go to the Tasks Folder: E:\
 
 Here we see a task called SystemCheck that we need to look at.
 
-![](<../../.gitbook/assets/image (30) (1).png>)
+![](<../../.gitbook/assets/image (30) (1) (1).png>)
 
 Open this up in Notepad:
 
@@ -128,11 +128,11 @@ For this question we will be using Zimmerman’s MFTExplorer program to look at 
 
 Load the $MFT table on the M drive.
 
-![](<../../.gitbook/assets/image (19) (1).png>)
+![](<../../.gitbook/assets/image (19) (1) (1).png>)
 
 Since we know that Silver Smurfer is the user we want to focus on from all the previous questions, and we have a bat file coming from their appdata folder, let’s start our search there.
 
-![](<../../.gitbook/assets/image (28).png>)
+![](<../../.gitbook/assets/image (28) (1).png>)
 
 Compared to the appdata folder on the M drive
 
@@ -160,9 +160,9 @@ Run this command to dump the contents to a csv in the c:\temp location
 
 .\PECmd.exe -d e:\M --csv c:\temp\prefetch
 
-![](<../../.gitbook/assets/image (13).png>)
+![](<../../.gitbook/assets/image (13) (1).png>)
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (1).png>)
 
 Open the Output CSV and put it into a table: Control + A -> Insert -> Table
 
@@ -170,7 +170,7 @@ Next we will search on Firefox and see what accessed the file.
 
 We have two items that opened the file, Certutil.exe and firfoxanalyzer.exe
 
-![](<../../.gitbook/assets/image (26).png>)
+![](<../../.gitbook/assets/image (26) (1).png>)
 
 This file is located at: \VOLUME{01d5be0528ae8f8c-1628d43c}\WINDOWS\SYSTEM32\CERTUTIL.EXE
 

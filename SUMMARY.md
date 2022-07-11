@@ -17,6 +17,7 @@
 * [Covert Channels - Suspicious](network-analysis/covert-channels-suspicious.md)
 * [Covert Channels - Transfer](network-analysis/covert-channels-transfer.md)
 * [Covert Channels - Suspiciouser](network-analysis/covert-channels-suspiciouser.md)
+* [Logged](network-analysis/logged.md)
 
 ## Stego
 
