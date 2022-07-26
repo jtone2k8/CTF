@@ -1,0 +1,17 @@
+name: Invoked!
+author: "El' Druin"
+value: 50
+description: "Invoke-Expression can be a sign of a malicious script on a network. With PowerShell this can be obfuscated in several differnt ways!
+
+Inside this file is a script that will show you 11 ways to call out invoke-expression and most of these will possibly bypass security products.
+
+What is the unencoded flag?"
+category: win_analysis
+type: standard
+flags:
+  - "fivectf{invoke_the_evokers}"
+state: hidden
+tags:
+    - win_analysis
+files:
+- invoked.txt
