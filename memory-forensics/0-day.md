@@ -76,7 +76,7 @@ For this one we will use the netscan plugin to answer this question, but there a
 
 #### vol.py -f 0day.bin --profile=Win2012R2x64\_18340 netscan | grep -v :::0 | grep -v 0.0.0.0
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 Answer: 172.116.5.105
 
@@ -108,7 +108,7 @@ vol.py -f 0day.bin --profile=Win2012R2x64\_18340 malfind | grep Pid
 
 Doing a quick google search on this one: Winsw.exe
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (2).png>)
 
 Answer: 1884
 

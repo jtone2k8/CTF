@@ -1,3 +1,7 @@
+---
+description: Creator's Cut
+---
+
 # Logged
 
 ## Scenario:
@@ -208,7 +212,7 @@ Port 5003 -> 5353 over TCP
 tshark -r logged.pcapng -Y "(tcp.port == 5003) && (tcp.payload)" -T fields -e tcp.payload | xxd -r -p
 ```
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (2).png>)
 
 I did not find any good bash commands for base62, there were php and python modules that would work if you wanted to try it out.
 

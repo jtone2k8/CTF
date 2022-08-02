@@ -1,3 +1,7 @@
+---
+description: Creator's Cut
+---
+
 # Cain's Memory Loss
 
 ## Question 1:

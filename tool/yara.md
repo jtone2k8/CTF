@@ -1,3 +1,7 @@
+---
+description: Creator's Cut
+---
+
 # Yara
 
 YARA is a powerful swiss army knife of pattern matching.
@@ -124,7 +128,7 @@ To count the occurrences | measure can answer that:
 
 .\yara64.exe -r .\q2.yar .\\|measure
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (2).png>)
 
 ![](<../.gitbook/assets/image (22) (1) (1).png>)
 
@@ -257,7 +261,7 @@ rule creative
 
 ![](<../.gitbook/assets/image (21) (1) (1).png>)
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (2).png>)
 
 ![](<../.gitbook/assets/image (23) (1) (1) (1).png>)
 
@@ -265,7 +269,7 @@ In case you missed it, we had one of the elves have 2 Creative toys:
 
 ![](<../.gitbook/assets/image (17) (1) (1) (1).png>)
 
-![](<../.gitbook/assets/image (4) (1) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1) (2).png>)
 
 The measure did not take into effect the double match so we had to add 1 to our answer.
 

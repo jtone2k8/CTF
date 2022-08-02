@@ -48,7 +48,7 @@ I would grab the script to install the tools as we will need a few others for la
 
 For this one in particular we are going to run the RegistryExplorer
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (2).png>)
 
 ![](<../../.gitbook/assets/image (22) (1).png>)
 
@@ -56,7 +56,7 @@ We will load the ntuser.dat file which is the HKUser hive for Silver Smurfer.   
 
 The registry key we are looking for is under ROOT\Software\Microsoft\Internet Explorer\TypedURLs
 
-![](<../../.gitbook/assets/image (4) (1).png>)
+![](<../../.gitbook/assets/image (4) (1) (1).png>)
 
 We see that since they used Internet Explorer, we have their history and the answer to this question.
 
@@ -136,7 +136,7 @@ Since we know that Silver Smurfer is the user we want to focus on from all the p
 
 Compared to the appdata folder on the M drive
 
-![](<../../.gitbook/assets/image (12).png>)
+![](<../../.gitbook/assets/image (12) (2).png>)
 
 We see that there is a sneaky folder in there.
 
