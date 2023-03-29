@@ -46,3 +46,29 @@ I am a wanderer; I have seen more than most would ever imagine. That is merely m
 
 Here is a [CyberChef Recipe](https://cyberchef.org/#recipe=XOR\(%7B'option':'Hex','string':'1'%7D,'Standard',false\)\&input=SCFgbCFgIXZgb2Vkc2RzOiFIIWlgd2QhcmRkbyFsbnNkIXVpYG8hbG5ydSF2bnRtZSFkd2RzIWhsYGZob2QvIVVpYHUhaHIhbGRzZG14IWx4IW9gdXRzZC8hZmJ1Z3p1eHNgZG1eaHJebHheb2BsZHw)
 
+## Question 3:
+
+If it was good enough for Julius Caesar then it should be good enough for Tyrael right? Hopefully this one will last longer than the 18 days ride it will take to reach you.
+
+Here is the next code for you to decipher:
+
+```
+Eqbpwcb i jmoqvvqvo, bpmzm qa vw mvl. Em ucab abizb awumepmzm, ivl bpqa xtikm qa ia owwl ia ivg. okbn{emtkwum_ocizlqiv}
+```
+
+For this one we can look at the end and can see that there is a flag there. So, with that there are a few things we can look at as options in order to decode this problem.
+
+1. we see that the {} are still there so that will limit a bunch of options
+2. okbn = gctf
+
+From these two facts you could think of a ROT-13 type of substitution, but if you try it out. it still turns up gibberish. [CyberChef Recipe](https://cyberchef.org/#recipe=ROT13\(true,true,false,13\)\&input=RXFicHdjYiBpIGptb3F2dnF2bywgYnBtem0gcWEgdncgbXZsLiBFbSB1Y2FiIGFiaXpiIGF3dW1lcG16bSwgaXZsIGJwcWEgeHRpa20gcWEgaWEgb3d3bCBpYSBpdmcuIG9rYm57ZW10a3d1bV9vY2l6bHFpdn0)
+
+It does look like a good start and the Caesar clue puts us on the right track. Looking at the clue a little closer we see something about 18 days, so lets try instead on 13...18 on the Rotation.
+
+### Question 3 Answer:
+
+```
+Without a beginning, there is no end. We must start somewhere, and this place is as good as any. gctf{welcome_guardian}
+```
+
+Here is the [CyberChef Recipe](https://cyberchef.org/#recipe=ROT13\(true,true,false,18\)\&input=RXFicHdjYiBpIGptb3F2dnF2bywgYnBtem0gcWEgdncgbXZsLiBFbSB1Y2FiIGFiaXpiIGF3dW1lcG16bSwgaXZsIGJwcWEgeHRpa20gcWEgaWEgb3d3bCBpYSBpdmcuIG9rYm57ZW10a3d1bV9vY2l6bHFpdn0)

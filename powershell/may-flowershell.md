@@ -67,13 +67,13 @@ CommandInvocation(Invoke-Expression): "Invoke-Expression"
 ParameterBinding(Invoke-Expression): name="Command"; value="$turkey="fivectf{turkeys_go_gobble_gobble}""
 ```
 
-{% hint style="info" %}
+{% hint style="success" %}
 **fivectf{turkeys\_go\_gobble\_gobble}**
 {% endhint %}
 
 #### Endcoded Message:
 
-{% hint style="info" %}
+{% hint style="success" %}
 ```
 $turkey="fivectf{turkeys_go_gobble_gobble}"
 ```
@@ -95,7 +95,7 @@ This obfuscation created 6 events:
 
 The 4104 Shows the de-obfuscated code:
 
-{% hint style="info" %}
+{% hint style="success" %}
 $baste="fivectf{lets\_get\_basted}"
 
 **fivectf{lets\_get\_basted}**
@@ -103,7 +103,7 @@ $baste="fivectf{lets\_get\_basted}"
 
 #### Endcoded Message:
 
-{% hint style="info" %}
+{% hint style="success" %}
 $baste="fivectf{lets\_get\_basted}"
 {% endhint %}
 
